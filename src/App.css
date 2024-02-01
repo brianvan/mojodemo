@@ -21,17 +21,40 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+.results__block {
+  list-style-type: none;
+  text-align: left;
+
+  :nth-child(even) {
+    background: lightgray;
+  }
+}
+
+li.result__row {
+  display: flex;
+
+  :nth-child(even) {
+    background: none;
+  }
+
+  .price {
+    width: 30em;
+    margin-right: 5em;
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
